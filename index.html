@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curso Node.js e MongoDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://luiztools.com.br/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  </head>
+  <body class="body">
+    <div class="container" style="margin-left: 5.8vw;">
+      <div class="row">
+        <div class="col-7">
+            <img src="data:image/webp;base64,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" alt="" style="margin-top: 3.8vw; padding-left: 4.5vw;">
+        </div>
+        <div class="col-5 mt-5">
+          <nav class="navbar navbar-expand-lg" >
+            <div class="container-fluid" >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Conteúdo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inscrição</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dúvidas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5" id="vertical">
+      <div class="row"  >
+        <div class="col ">
+          <h1 id="hero">Curso Node.js e MongoDB</h1>
+          <h3 class="hero-h3">Aprenda a desenvolver suas primeiras aplicações web e web APIs usando
+            as tecnologias que mais crescem no mercado!</h3>
+            <h3 class="hero-h3">Dê um start na sua carreira ou atualize-se, se tornando um
+              desenvolvedor Node.js!</h3> 
+              <div class="row">
+                <div class="col-6">
+                  <button type="button" class="btn" id="preço">Ver Preço e Inscrição</button>
+                </div>
+                <div class="col-6">
+                  <h4 class="hero-h4">Curso atualizado 2023, prático, com certificado e suporte online.</h4>
+                </div>
+              </div>
+        </div>
+        <div class="col align-self-end">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_LvzW_cvCaQ" title="Curso Node.js e MongoDB - Introdução 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+        </div>
+      </div>
+    </div>
+    <h2 class="hero-h2">TORNE-SE UM DESENVOLVEDOR DE APLICAÇÕES</h2>
+    <h1 id="hero2">Node.js e MongoDB</h1>
+    <h3 id="hero3">JavaScript é hoje a linguagem de programação mais popular do mundo. Aliada à plataforma Node.js e ao banco de dados MongoDB, você desenvolve end-to-end com apenas uma linguagem de programação.</h3>
+    <div class="container text-center" id="cursos">
+      <div class="row">
+        <div class="col dark-card">
+          <div class="circle">
+            <img src="https://www.luiztools.com.br/img/nodejs-logo.png" alt="">
+          </div>
+          <div class="title">
+            Node.Js
+          </div>
+          <div class="pa">
+            Uma plataforma que permite criar aplicações utilizando arquiteturas modernas
+  e
+  escaláveis.
+          </div>
+        </div>
+        <div class="col dark-card">
+          <div class="circle">
+            <img src="https://www.luiztools.com.br/img/mongodb-logo.png" alt="">
+          </div> 
+          <div class="title">
+            MongoDB
+          </div>
+          <div class="pa">
+            Simplesmente o banco de dados mais prático para você aprender a construir aplicações reais com Node.js.
+          </div>
+        </div>
+        <div class="col dark-card">
+          <div class="circle">
+            <img src="https://www.luiztools.com.br/img/expressjs-logo.png" alt="">
+          </div>
+          <div class="title">
+            ExpressJS
+          </div>
+          <div class="pa">
+            O framework web para Node.js mais utilizado no mundo, por empresas de todos os tamanhos.
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col dark-card">
+        <div class="circle">
+          <img src="https://www.luiztools.com.br/img/microservices-logo.png" alt="">
+        </div>
+        <div class="title">
+          Microservices
+        </div>
+        <div class="pa">
+          A arquitetura de software #1 atualmente quando o assunto é aplicações distribuídas e escaláveis.
+        </div>
+      </div>
+      <div class="col dark-card">
+        <div class="circle">
+          <img src="https://www.luiztools.com.br/img/aws-logo.png" alt="">
+        </div>
+        <div class="title">
+          Amazon AWS
+        </div>
+        <div class="pa">
+          Não basta desenvolver, você tem de saber como subir a sua aplicação em produção. Que tal na Amazon AWS?
+        </div>
+      </div>
+      <div class="col dark-card">
+        <div class="circle emoji">
+          🙌
+        </div>
+        <div class="title">
+          E muito mais!
+        </div>
+        <div class="pa">
+          Você aprenderá de maneira prática a usar os principais pacotes e técnicas do mercado.
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
